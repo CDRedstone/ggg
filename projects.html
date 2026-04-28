@@ -8,21 +8,21 @@
 		<script src=" https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js "></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 		<!-- initialize my stuff -->
-		<script src="/js/all.min.js"></script>
-		<script src="/js/games.js"></script>
-		<script src="/js/search.js"></script>
-		<script src="/js/main.js"></script>
-		<script src="/js/widget.js"></script>
-		<script src="/js/themes.js"></script>
-		<script src="/js/cookie.js"></script>
+		<script src="ggg/js/all.min.js"></script>
+		<script src="ggg/js/games.js"></script>
+		<script src="ggg/js/search.js"></script>
+		<script src="ggg/js/main.js"></script>
+		<script src="ggg/js/widget.js"></script>
+		<script src="ggg/js/themes.js"></script>
+		<script src="ggg/js/cookie.js"></script>
 
 		
-		<link rel="stylesheet" href="/style.css" />
+		<link rel="stylesheet" href="ggg/style.css" />
 		
 
 		<!-- seo + other things -->
 		<title>Projects | Selenite</title>
-		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" href="ggg/favicon.ico" />
 
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
 
@@ -34,7 +34,7 @@
 	<alerts>
 		<div id="toast"></div>
 		<script>
-			$.getJSON("data/changelog.json", (data) => {
+			$.getJSON("ggg/data/changelog.json", (data) => {
 				if (localStorage.getItem("selenite.version") != data.version) {
 					toast({ title: "New Update!", message: data.desc, time: data.timestamp });
 					localStorage.setItem("selenite.version", data.version);
@@ -44,13 +44,13 @@
 	</alerts>
 	<body>
 		<header>
-			<a href="/index.html">Home</a>
-			<a href="/bookmarklets.html">Bookmarklets</a>
-			<a href="/projects.html">Games</a>
-			<a href="/apps.html">Apps</a>
-			<a href="/settings.html">Settings</a>
-			<a id="blank" href="#">Open Blank</a>
-      <a href="/u/" class="usericon"><img src="/img/user.svg"></a>
+			<a href="ggg/index.html">Home</a>
+			<a href="ggg/bookmarklets.html">Bookmarklets</a>
+			<a href="ggg/projects.html">Games</a>
+			<a href="ggg/apps.html">Apps</a>
+			<a href="ggg/settings.html">Settings</a>
+			<a id="blank" href="ggg/#">Open Blank</a>
+      <a href="/u/" class="usericon"><img src="ggg/img/user.svg"></a>
 
 		</header>
 		<main>
@@ -75,9 +75,9 @@
 
 			<h2>All Games</h2>
 			<div id="games">
-				<a href="/suggest.html"
+				<a href="ggg/suggest.html"
 					><div class="suggest">
-						<img src="img/addlink.svg" alt="Add Game logo" style="filter: invert(1) !important" />
+						<img src="ggg/img/addlink.svg" alt="Add Game logo" style="filter: invert(1) !important" />
 						<h1>Suggest a game!</h1>
 					</div></a
 				>
@@ -91,10 +91,10 @@
 		<footer>
 			<a href="https://gitlab.com/skysthelimit.dev/selenite">Source</a>
 			<a href="https://discord.gg/7jyufnwJNf">Discord</a>
-			<a href="/suggest.html">Suggestions & Bugs</a>
-			<a href="/contact.html">Contact</a>
-			<a href="/support.html">Donate</a>
-			<a href="/about.html">About</a>
+			<a href="ggg/suggest.html">Suggestions & Bugs</a>
+			<a href="ggg/contact.html">Contact</a>
+			<a href="ggg/support.html">Donate</a>
+			<a href="ggg/about.html">About</a>
 		</footer>
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {
